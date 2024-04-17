@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --primary-color: #1D1F21;
+  --light-gray: #f8f8f8;
+  --dark-gray: #909090;
+  --custom-red: #DA0037;
+  --darklight-gray: #e7e7e7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: #f3f5f9;
+  } 
+
+/* BURGER ICON */
+
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  background-color: var(--darklight-gray);
+  border-radius: 50%;
+  display: flex;
+  -webkit-tap-highlight-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+
+}
+
+.nav-btn span {
+  position: absolute;
+    display: block;
+    width: 40%;
+    height: 2px;
+    background-color: var(--primary-color);
+    border-radius: 1px;
+    transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+}
+.nav-btn span:first-child {
+  top: 16px;
+}
+.nav-btn span:last-child {
+  bottom: 16px;
+}
+.nav-btn span:first-child.active {
+
+  top: 19px;
+}
+.nav-btn span:last-child.active {
+
+  bottom: 19px;
+  
+}
+/* scroll bar */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  transition: .2s ease-in-out;
+  border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(29, 31, 33, .9);
+  transition: .2s ease-in-out;
+}
+
+/* input radios */
+input[type="radio"] {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  cursor: none;
+  user-select: none;
+}
+input[type="radio"] + label {
+  border: 1px solid var(--darklight-gray);
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: .3s all;
+}
+
+input[type="radio"]:checked + label {
+  background-color: var(--darklight-gray);
+}
+
+/* image scale in container */
+.img-scale-container {
+  transition: .5s ease all;
+}
+
+.img-scale {
+  transition: .5s ease all;
+}
+
+.img-scale-container:hover .img-scale {
+  transform: scale(1.1);
+  transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1) all;
+}
+
+
+
