@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export async function generateMetadata() {
   return {
-    title: "About me",
+    title: "About Us",
     description:
-      "I'm Dastan Hayama, a dedicated web developer and designer. With a strong passion for creating exceptional online experiences, I combine my technical expertise and artistic vision to bring your digital vision to life. Collaborate with me to craft visually stunning websites that engage and inspire. Let's work together to create something truly remarkable.",
+      "Welcome to KOJI Agency, your partner in digital success! Our About Us page is more than just a glimpse into who we are; it's a window into the passion and expertise driving our digital marketing journey. At KOJI, we specialize in crafting innovative strategies tailored to elevate your brand in the ever-evolving digital landscape.",
   };
 }
 
@@ -20,7 +20,7 @@ export default function page() {
           <span className="text-darkGray">passion</span> drive our exceptional
           results.
         </h1>
-        <div className="flex w-full justify-start items-start lg:justify-end lg:items-end">
+        {/* <div className="flex w-full justify-start items-start lg:justify-end lg:items-end">
           <div className="lg:basis-1/3 basis-full flex flex-col gap-4">
             <p className=" text-xs md:text-sm font-medium text-primary">
               In my world, creativity merges with strategy, where stunning
@@ -75,7 +75,7 @@ export default function page() {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <img
         src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -85,41 +85,43 @@ export default function page() {
       <section className="grid lg:grid-cols-3 grid-cols-1 w-full px-6 md:px-[50px] gap-4 lg:gap-0 mb-12 md:mb-24">
         <div className="flex justify-start items-start w-full col-span-1">
           <p className="text-xs md:text-sm font-base text-primary bg-darklightGray uppercase px-6 py-2 rounded-[100px]">
-            A few words about me
+            A few words about us
           </p>
         </div>
         <div className="col-span-1 lg:col-span-2 flex w-full flex-col items-center gap-8">
           <h2
             className={` font-medium md:text-5xl text-3xl text-primary uppercase border-b-[1px] border-darklightGray pb-8`}>
-            A FREELANCE DIGITAL developer and designer DEDICATED TO EMPOWERING
-            FORWARD-THINKING COMPANIES TO UNLOCK THEIR GROWTH POTENTIAL.
+            Empowering Brands to Unleash Their Digital Potential
           </h2>
           <div className="flex w-full flex-col lg:flex-row justify-between items-start gap-8">
             <p className="text-xs md:text-sm font-medium text-primary">
-              I am not just about creating visually stunning websites – I am
-              about creating digital experiences that leaves a lasting first
-              impression. I am a young digital designer who takes work
-              seriously, but I also believe that work should be fun. That's why
-              I inject a little bit of humor into every project I do.
+              At KOJI Agency, we're more than just another digital marketing
+              firm – we're passionate about crafting immersive digital
+              experiences that make a lasting impact. As a team of
+              forward-thinking digital marketers, we take our work seriously
+              while embracing the idea that work should also be enjoyable.
               <br />
-              <br />I believe that laughter and creativity go hand-in-hand, and
-              that mindset helps me push boundaries and deliver truly
-              exceptional designs. I also believe that no two businesses are
-              alike, and therefore, no two websites should look too similar to
-              each other.
+              <br />
+              We firmly believe that humor and creativity are essential
+              ingredients for pushing the boundaries of digital marketing. Our
+              mindset allows us to inject personality into every campaign,
+              delivering results that stand out in today's competitive
+              landscape.
             </p>
             <p className="text-xs md:text-sm font-light text-primary">
-              That's why I take a customised approach to every project I work
-              on. I get to know your brand's personality and your business's
-              unique needs before crafting a design that perfectly fits your
-              vision. Whether you're a small startup or an established business,
-              I'll create a website that captures the essence of your brand and
-              helps you stand out in the crowded digital landscape.
+              Recognizing that each business is unique, we tailor our approach
+              to every project. By delving into your brand's identity and
+              understanding your specific goals, we develop customized
+              strategies that resonate with your audience and drive meaningful
+              engagement.
               <br />
               <br />
-              So, if you're looking for a web designer who takes your business
-              seriously, but also having fun, I am that person. Book a free
-              strategy call and let's talk about you business!
+              Whether you're a burgeoning startup or an established enterprise,
+              we're committed to helping you unlock your full digital potential.
+              So, if you're seeking a digital marketing partner who's dedicated
+              to your success and knows how to have fun along the way, get in
+              touch with us for a free consultation. Let's discuss how we can
+              elevate your brand and drive growth in the digital realm!
             </p>
           </div>
           <div className="flex gap-2 lg:gap-2 md:gap-5 items-center w-full">
@@ -191,22 +193,20 @@ export default function page() {
         <div className="col-span-1 lg:col-span-2 flex w-full flex-col items-start gap-8">
           <h2
             className={` font-medium md:text-5xl text-3xl text-primary uppercase`}>
-            DESIGNING WITH <span className="text-darkGray">PURPOSE</span>
+            Driven by <span className="text-darkGray">PURPOSE</span>
           </h2>
           <p className="text-xs md:text-sm font-medium text-primary">
-            As a freelancer with a passion for web design, I have to tell you
-            that I approach every project like a superhero with unique powers
-            and strengths. I custom-fit every website like a tailor-made suit,
-            delivering on time without sacrificing quality - I am more like The
-            Flash than Superman. I collaborate closely with my clients to
-            achieve shared goals, like Batman and Robin. So why settle for a
-            plain website when you can have one that's super? Get in touch and
-            let me use my magic on you.
+            At KOJI Agency, we approach digital marketing with an artisan's
+            touch. Each strategy is meticulously tailored to your brand,
+            ensuring it fits seamlessly into your unique identity. Our
+            collaboration is akin to a finely-tuned orchestra, where every
+            instrument plays its part to achieve harmony. Say goodbye to
+            ordinary; let us elevate your brand to extraordinary heights.
           </p>
         </div>
       </section>
       <section className="bg-lightGray py-4 grid lg:grid-cols-4 grid-cols-1 w-full px-6 md:px-[50px] gap-8">
-        <div className="col-span-1 h-auto lg:h-[80vh] border-[1px] border-darkGray pt-6 pb-6 lg:pb-24 px-6 flex flex-col justify-start items-start">
+        <div className="col-span-1 h-auto lg:h-[60vh] border-[1px] border-darkGray pt-6 pb-6 lg:pb-24 px-6 flex flex-col justify-start items-start">
           <div className="flex flex-col gap-4 mb-4 lg:mb-16">
             <h3 className="font-medium md:text-5xl text-3xl text-primary uppercase">
               01<span className="text-darkGray">.</span>{" "}
@@ -216,107 +216,90 @@ export default function page() {
             </h3>
           </div>
           <p className="text-xs md:text-sm text-primary">
-            Creativity is not just a value to me, it's a superpower that I use
-            to help your brand stand out in a sea of competitors. I believe that
-            a visually stunning and distinctive website design is like a
-            powerful spell that leaves a lasting impression on your audience,
-            making them fall under your brand's spell.
+            We embrace creativity as the cornerstone of our approach, constantly
+            pushing boundaries to deliver innovative solutions that captivate
+            audiences.
           </p>
         </div>
-        <div className="col-span-1 h-auto lg:h-[80vh] border-[1px] border-darkGray pt-6 pb-6 lg:pb-24 px-6 flex flex-col justify-start items-start">
+        <div className="col-span-1 h-auto lg:h-[60vh] border-[1px] border-darkGray pt-6 pb-6 lg:pb-24 px-6 flex flex-col justify-start items-start">
           <div className="flex flex-col gap-4 mb-4 lg:mb-16">
             <h3 className="font-medium md:text-5xl text-3xl text-primary uppercase">
               02<span className="text-darkGray">.</span>{" "}
+            </h3>
+            <h3 className=" text-xl text-darkGray uppercase font-medium">
+              Authentic Connections
+            </h3>
+          </div>
+          <p className="text-xs md:text-sm text-primary">
+            We prioritize building genuine connections with our clients and
+            their audiences, fostering trust and loyalty through transparent and
+            authentic communication.
+          </p>
+        </div>
+        <div className="col-span-1 h-auto lg:h-[60vh] border-[1px] border-darkGray pt-6 pb-6 lg:pb-24 px-6 flex flex-col justify-start items-start">
+          <div className="flex flex-col gap-4 mb-4 lg:mb-16">
+            <h3 className="font-medium md:text-5xl text-3xl text-primary uppercase">
+              03<span className="text-darkGray">.</span>{" "}
+            </h3>
+            <h3 className=" text-xl text-darkGray uppercase font-medium">
+              Results-Driven Excellence
+            </h3>
+          </div>
+          <p className="text-xs md:text-sm text-primary">
+            We are relentless in our pursuit of excellence, driven by a passion
+            for delivering measurable results that exceed expectations and
+            propel our clients towards success.
+          </p>
+        </div>
+      </section>
+      <section className="bg-lightGray pt-4 pb-32 grid lg:grid-cols-4 grid-cols-1 w-full px-6 md:px-[50px] gap-8 items-end">
+        <div className="col-span-1 lg:col-start-2 h-auto lg:h-[60vh] border-[1px] border-darkGray pt-6 pb-6 lg:pb-24 px-6 flex flex-col justify-start items-start">
+          <div className="flex flex-col gap-4 mb-4 lg:mb-16">
+            <h3 className="font-medium md:text-5xl text-3xl text-primary uppercase">
+              04<span className="text-darkGray">.</span>{" "}
+            </h3>
+            <h3 className=" text-xl text-darkGray uppercase font-medium">
+              Continuous Learning
+            </h3>
+          </div>
+          <p className="text-xs md:text-sm text-primary">
+            We thrive on curiosity and are committed to staying ahead of the
+            curve in the dynamic world of digital marketing, constantly learning
+            and evolving to meet the ever-changing needs of our clients.
+          </p>
+        </div>
+        <div className="col-span-1 h-auto lg:h-[60vh] border-[1px] border-darkGray pt-6 pb-6 lg:pb-24 px-6 flex flex-col justify-start items-start">
+          <div className="flex flex-col gap-4 mb-4 lg:mb-16">
+            <h3 className="font-medium md:text-5xl text-3xl text-primary uppercase">
+              05<span className="text-darkGray">.</span>{" "}
+            </h3>
+            <h3 className=" text-xl text-darkGray uppercase font-medium">
+              Fun and Fearless
+            </h3>
+          </div>
+          <p className="text-xs md:text-sm text-primary">
+            We believe in infusing joy and enthusiasm into everything we do,
+            maintaining a fearless attitude that allows us to tackle challenges
+            with creativity, resilience, and a sense of adventure.
+          </p>
+        </div>
+        <div className="col-span-1 h-auto lg:h-[60vh] border-[1px] border-darkGray pt-6 pb-6 lg:pb-24 px-6 flex flex-col justify-start items-start">
+          <div className="flex flex-col gap-4 mb-4 lg:mb-16">
+            <h3 className="font-medium md:text-5xl text-3xl text-primary uppercase">
+              06<span className="text-darkGray">.</span>{" "}
             </h3>
             <h3 className=" text-xl text-darkGray uppercase font-medium">
               ATTENTION TO DETAIL
             </h3>
           </div>
           <p className="text-xs md:text-sm text-primary">
-            I am like detective here, always paying attention to even the
-            tiniest details. I know that these little clues can add up to a big
-            impact on your website's overall look and feel. My mission is to
-            craft visually harmonious and engaging designs that will have your
-            audience feeling like they've just stumbled upon a work of art.
-          </p>
-        </div>
-        <div className="col-span-1 h-auto lg:h-[80vh] border-[1px] border-darkGray pt-6 pb-6 lg:pb-24 px-6 flex flex-col justify-start items-start">
-          <div className="flex flex-col gap-4 mb-4 lg:mb-16">
-            <h3 className="font-medium md:text-5xl text-3xl text-primary uppercase">
-              03<span className="text-darkGray">.</span>{" "}
-            </h3>
-            <h3 className=" text-xl text-darkGray uppercase font-medium">
-              flexibility
-            </h3>
-          </div>
-          <p className="text-xs md:text-sm text-primary">
-            I am all about the custom-fit. I know that each client is like a
-            fingerprint - unique and one of a kind. That's why I am dedicated to
-            working closely with you to create a website that not only meets
-            your goals but also delivers a seamless user experience. I believe
-            that your website should fit you like a glove, not a
-            one-size-fits-all approach.
-          </p>
-        </div>
-      </section>
-      <section className="bg-lightGray pt-4 pb-32 grid lg:grid-cols-4 grid-cols-1 w-full px-6 md:px-[50px] gap-8 items-end">
-        <div className="col-span-1 lg:col-start-2 h-auto lg:h-[80vh] border-[1px] border-darkGray pt-6 pb-6 lg:pb-24 px-6 flex flex-col justify-start items-start">
-          <div className="flex flex-col gap-4 mb-4 lg:mb-16">
-            <h3 className="font-medium md:text-5xl text-3xl text-primary uppercase">
-              04<span className="text-darkGray">.</span>{" "}
-            </h3>
-            <h3 className=" text-xl text-darkGray uppercase font-medium">
-              always on time
-            </h3>
-          </div>
-          <p className="text-xs md:text-sm text-primary">
-            I am like a clockmaker, ticking and tocking to the beat of the
-            project timeline. I know that timely delivery is crucial to project
-            success, and that's why I make it a priority to deliver on time and
-            within budget. I make sure to keep the quality and attention to
-            detail of your project ticking like a Swiss watch, ensuring a
-            stunning end result.
-          </p>
-        </div>
-        <div className="col-span-1 h-auto lg:h-[80vh] border-[1px] border-darkGray pt-6 pb-6 lg:pb-24 px-6 flex flex-col justify-start items-start">
-          <div className="flex flex-col gap-4 mb-4 lg:mb-16">
-            <h3 className="font-medium md:text-5xl text-3xl text-primary uppercase">
-              05<span className="text-darkGray">.</span>{" "}
-            </h3>
-            <h3 className=" text-xl text-darkGray uppercase font-medium">
-              quality assurance
-            </h3>
-          </div>
-          <p className="text-xs md:text-sm text-primary">
-            I am like your website's personal trainer, getting it into its best
-            shape. I know that quality assurance is a crucial component of any
-            design process, which is why I put every aspect of your website
-            through its paces. From button clicks to page loads, I make sure
-            your website is functioning optimally and delivering the best
-            possible user experience.
-          </p>
-        </div>
-        <div className="col-span-1 h-auto lg:h-[80vh] border-[1px] border-darkGray pt-6 pb-6 lg:pb-24 px-6 flex flex-col justify-start items-start">
-          <div className="flex flex-col gap-4 mb-4 lg:mb-16">
-            <h3 className="font-medium md:text-5xl text-3xl text-primary uppercase">
-              06<span className="text-darkGray">.</span>{" "}
-            </h3>
-            <h3 className=" text-xl text-darkGray uppercase font-medium">
-              collaboration
-            </h3>
-          </div>
-          <p className="text-xs md:text-sm text-primary">
-            I am like a superhero, with my clients as my trusty sidekicks. I
-            know that collaboration is the key to any successful project, which
-            is why I work closely with you to develop a shared vision and goals.
-            I am all about frequent check-ins and feedback. With your powers and
-            mine combined, we'll create the best possible results for your
-            business.
+            Consider us your digital detectives, meticulously examining every
+            detail to uncover the secrets to your brand's success.
           </p>
         </div>
       </section>
       <ProcessAccordion />
-      <div className="h-auto bg-lightGray flex flex-col justify-start items-start gap-6 py-24 px-6 md:px-[50px]">
+      <div className="h-auto bg-lightGray flex flex-col justify-center items-center gap-6 py-24 px-6 md:px-[50px]">
         <p className="text-md md:text-lg font-base text-white bg-primary capitalize px-6 py-2 rounded-[100px]">
           Get in touch
         </p>
@@ -324,10 +307,10 @@ export default function page() {
           <span className="text-darkGray">HAVE AN IDEA? </span>
           LET'S DO IT TOGETHER!
         </h2>
-        <p className="w-full md:w-1/2 text-primary font-base text-md md:text-lg">
+        {/* <p className="w-full md:w-1/2 text-primary font-base text-md md:text-lg">
           Harness your creativity and surpass your competitors with a
           professional web experience that will set you apart.
-        </p>
+        </p> */}
         <Link href="/contact" className="md:w-auto w-1/2">
           <button className="bg-primary rounded-[100px] py-2 pl-4 pr-2 flex gap-3 items-center justify-center md:justify-start md:w-auto w-full">
             <span className="text-md md:text-lg text-white capitalize">

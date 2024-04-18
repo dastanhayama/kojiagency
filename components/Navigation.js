@@ -29,7 +29,7 @@ const Navigation = ({ toggleClass, setToggleClass }) => {
             className="md:border-b-[0] border-b-[1px] md:border-r-[1px] border-darklightGray col-span-1 flex flex-col justify-end py-4 md:py-6 px-3 md:px-[20px]">
             <li>
               <div className="w-full flex justify-between items-center">
-                <p className="text-md md:text-xl font-light uppercase text-primary">
+                <p className="text-md md:text-xl font-medium uppercase text-primary">
                   Home
                 </p>
                 <RxArrowTopRight size={20} className="font-primary" />
@@ -41,7 +41,7 @@ const Navigation = ({ toggleClass, setToggleClass }) => {
             className="md:border-b-[0] border-b-[1px] md:border-r-[1px] border-darklightGray col-span-1  flex flex-col justify-end py-4 md:py-6 px-3 md:px-[20px]">
             <li>
               <div className="w-full flex justify-between items-center">
-                <p className="text-md md:text-xl font-light uppercase text-primary">
+                <p className="text-md md:text-xl font-medium uppercase text-primary">
                   Work
                 </p>
                 <RxArrowTopRight size={20} className="font-primary" />
@@ -53,7 +53,7 @@ const Navigation = ({ toggleClass, setToggleClass }) => {
             className="md:border-b-[0] border-b-[1px] md:border-r-[1px] border-darklightGray col-span-1  flex flex-col justify-end py-4 md:py-6 px-3 md:px-[20px]">
             <li>
               <div className="w-full flex justify-between items-center">
-                <p className="text-md md:text-xl font-light uppercase text-primary">
+                <p className="text-md md:text-xl font-medium uppercase text-primary">
                   About
                 </p>
                 <RxArrowTopRight size={20} className="font-primary" />
@@ -65,7 +65,7 @@ const Navigation = ({ toggleClass, setToggleClass }) => {
             className="md:border-b-[0] border-b-[1px] md:border-r-[1px] border-darklightGray col-span-1  flex flex-col justify-end py-4 md:py-6 px-3 md:px-[20px]">
             <li>
               <div className="w-full flex justify-between items-center">
-                <p className="text-md md:text-xl font-light uppercase text-primary">
+                <p className="text-md md:text-xl font-medium uppercase text-primary">
                   Contact
                 </p>
                 <RxArrowTopRight size={20} className="font-primary" />
@@ -77,7 +77,7 @@ const Navigation = ({ toggleClass, setToggleClass }) => {
             className="col-span-1 flex flex-col justify-end py-4 md:py-6 px-3 md:px-[20px]">
             <li>
               <div className="w-full flex justify-between items-center">
-                <p className="text-md md:text-xl font-light uppercase text-primary">
+                <p className="text-md md:text-xl font-medium uppercase text-primary">
                   Blog
                 </p>
                 <RxArrowTopRight size={20} className="font-primary" />
@@ -98,8 +98,8 @@ const Navigation = ({ toggleClass, setToggleClass }) => {
               animate={{ opacity: 1, y: "0px" }}
               transition={{ duration: 0.2, ease: "easeOut", delay: 0.6 }}
               className="w-full flex justify-between items-center h-full">
-              <p className="text-sm md:text-lg font-light uppercase text-primary">
-                Github profile
+              <p className="text-sm md:text-lg font-medium uppercase text-primary">
+                Instagram
               </p>
 
               <RxArrowTopRight size={20} className="font-primary" />
@@ -114,7 +114,7 @@ const Navigation = ({ toggleClass, setToggleClass }) => {
               href="https://www.linkedin.com/in/dastanhayama/"
               target="_blank"
               className="col-span-1 flex justify-center items-center border-r-[1px] py-4 md:py-6">
-              <p className="text-sm md:text-lg font-light uppercase text-primary">
+              <p className="text-sm md:text-lg font-medium uppercase text-primary">
                 LinkedIn
               </p>
             </a>
@@ -122,8 +122,8 @@ const Navigation = ({ toggleClass, setToggleClass }) => {
               href="https://www.instagram.com/dastanhayama/"
               target="_blank"
               className="col-span-1 flex justify-center items-center border-r-[1px] py-4 md:py-6">
-              <p className="text-sm md:text-lg font-light uppercase text-primary">
-                Instagram
+              <p className="text-sm md:text-lg font-medium uppercase text-primary">
+                Facebook
               </p>
             </a>
             <a
@@ -133,8 +133,8 @@ const Navigation = ({ toggleClass, setToggleClass }) => {
               <p
                 href="https://dribbble.com/Dastan_Hayama"
                 target="_blank"
-                className="text-sm md:text-lg font-light uppercase text-primary">
-                Dribble
+                className="text-sm md:text-lg font-medium uppercase text-primary">
+                TikTok
               </p>
             </a>
           </motion.ul>

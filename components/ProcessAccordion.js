@@ -7,31 +7,31 @@ const data = [
     id: 1,
     title: "Discovery and strategy",
     content:
-      "I don't just dive headfirst into designing websites. I like to get to know my clients first. I'll ask you all sorts of questions about your business goals, target audience, and what you had for breakfast this morning. Just kidding about the breakfast part, but you get the idea.",
+      "In this initial phase, our team dives deep into understanding your business objectives, target audience, and competitive landscape. We formulate a comprehensive digital marketing strategy tailored to your specific needs, encompassing channels, tactics, and key performance indicators (KPIs) to guide our efforts.",
   },
   {
     id: 2,
-    title: "Design and development",
+    title: "Planning and Creation",
     content:
-      "I don't just dive headfirst into designing websites. I like to get to know my clients first. I'll ask you all sorts of questions about your business goals, target audience, and what you had for breakfast this morning. Just kidding about the breakfast part, but you get the idea.",
+      "With the strategy in place, we proceed to develop detailed campaign plans for each digital channel identified. This includes content creation, ad copywriting, graphic design, and other creative elements necessary to execute the strategy effectively. We ensure alignment with your brand identity and messaging throughout the process.",
   },
   {
     id: 3,
-    title: "Testing and quality assurance",
+    title: "Implementation and Execution",
     content:
-      "I don't just dive headfirst into designing websites. I like to get to know my clients first. I'll ask you all sorts of questions about your business goals, target audience, and what you had for breakfast this morning. Just kidding about the breakfast part, but you get the idea.",
+      "Once the campaign plans are finalized, we move into the execution phase, where we implement all elements across various digital platforms. This may involve launching ads, publishing content, optimizing website performance, and managing social media accounts. Our team closely monitors campaign performance in real-time, making adjustments as needed to maximize results.",
   },
   {
     id: 4,
-    title: "Launch and optimisation",
+    title: "Monitoring and Analysis",
     content:
-      "I don't just dive headfirst into designing websites. I like to get to know my clients first. I'll ask you all sorts of questions about your business goals, target audience, and what you had for breakfast this morning. Just kidding about the breakfast part, but you get the idea.",
+      "Throughout the campaign duration, we continuously monitor key metrics and performance indicators to gauge the effectiveness of our efforts. We utilize advanced analytics tools to track website traffic, engagement rates, conversion rates, and other relevant data points. This ongoing analysis allows us to identify trends, uncover insights, and make data-driven decisions to optimize campaign performance.",
   },
   {
     id: 5,
-    title: "Ongoing support",
+    title: "Reporting and Optimization",
     content:
-      "I don't just dive headfirst into designing websites. I like to get to know my clients first. I'll ask you all sorts of questions about your business goals, target audience, and what you had for breakfast this morning. Just kidding about the breakfast part, but you get the idea.",
+      "At the conclusion of each campaign cycle, we provide comprehensive reports detailing the outcomes and insights gained. We review the successes and challenges encountered, highlighting areas of improvement and opportunities for optimization. Based on these findings, we refine our strategies and tactics for future campaigns, ensuring continuous growth and success for your brand in the digital landscape.",
   },
 ];
 

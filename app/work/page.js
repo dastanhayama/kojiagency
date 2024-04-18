@@ -109,7 +109,7 @@ export default async function page() {
           ))
           .reverse()}
       </ul>
-      <div className="h-auto bg-primary flex flex-col justify-start items-start gap-6 py-24 px-6 md:px-[50px]">
+      <div className="h-auto bg-primary flex flex-col justify-center items-center gap-6 py-24 px-6 md:px-[50px]">
         <p className="text-md md:text-lg font-base text-primary bg-white capitalize px-6 py-2 rounded-[100px]">
           Get in touch
         </p>
@@ -117,10 +117,10 @@ export default async function page() {
           <span className="text-darkGray">HAVE AN IDEA? </span>
           LET'S DO IT TOGETHER!
         </h2>
-        <p className="w-full md:w-1/2 text-white font-base text-md md:text-lg">
+        {/* <p className="w-full md:w-1/2 text-white font-base text-md md:text-lg">
           Harness your creativity and surpass your competitors with a
           professional web experience that will set you apart.
-        </p>
+        </p> */}
         <Link href="/contact" className="md:w-auto w-1/2">
           <button className="bg-lightGray rounded-[100px] py-2 pl-4 pr-2 flex gap-3 items-center justify-center md:justify-start md:w-auto w-full">
             <span className="text-md md:text-lg text-primary capitalize">

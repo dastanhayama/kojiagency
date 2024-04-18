@@ -11,7 +11,7 @@ const Footer = () => {
             <h2 className="text-xl md:text-4xl text-primary font-bold uppercase select-none tracking-[-0.07em] md:mr-[2px] mr-[1px] ">
               KOJI
             </h2>
-            <span class="md:w-3 md:h-3 w-2 h-2 md:mb-[6px] mb-[2px] bg-primary rounded-full flex items-center justify-center align-middle" />
+            <span className="md:w-3 md:h-3 w-2 h-2 md:mb-[6px] mb-[2px] bg-primary rounded-full flex items-center justify-center align-middle" />
           </Link>
         </div>
         <div className="col-span-2 grid grid-cols-2">
