@@ -153,7 +153,7 @@ export default async function page({ params }) {
               ))}
               |
               <p className="text-darkGray text-xs md:text-sm font-medium uppercase">
-                2 min read
+                4 min read
               </p>
             </div>
             <p className="text-darkGray text-xs md:text-sm font-medium uppercase">

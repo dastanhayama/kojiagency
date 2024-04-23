@@ -33,6 +33,12 @@ const data = [
     content:
       "At the conclusion of each campaign cycle, we provide comprehensive reports detailing the outcomes and insights gained. We review the successes and challenges encountered, highlighting areas of improvement and opportunities for optimization. Based on these findings, we refine our strategies and tactics for future campaigns, ensuring continuous growth and success for your brand in the digital landscape.",
   },
+  {
+    id: 6,
+    title: "Continuous Improvement",
+    content:
+      "Adapt strategies based on analytics, refine campaigns, and implement improvements for ongoing success and maximum ROI.",
+  },
 ];
 
 function ProcessAccordion() {

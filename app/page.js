@@ -5,7 +5,7 @@ export default function Home() {
     <main className="flex flex-col gap-8 min-h-[70vh] lg:min-h-[100vh] px-6 md:px-[50px] pt-32 md:pt-48 pb-8 ">
       <h1
         className={`font-medium text-3xl md:text-7xl text-primary md:text-center`}>
-        WE ARE <span className="text-darkGray">KOJI AGENCY.</span> <br />
+        WE ARE <span className="text-darkGray">KOJI MEDIA.</span> <br />
         <span>YOUR DIGITAL GROWTH PARTNERS.</span>
       </h1>
       <div className="w-full flex flex-col gap-2 lg:gap-0 justify-between items-center">

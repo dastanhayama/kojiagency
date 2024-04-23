@@ -19,11 +19,13 @@ function PostCard({ post }) {
           <p className="text-sm md:text-md text-darkGray font-light">
             {moment(post.createdAt).format("MMM DD, YYYY")}
           </p>
-          {post.categories.map((item) => (
-            <p key={item.slug} className="text-sm md:text-md text-primary">
-              {item.name}
-            </p>
-          ))}
+          <div className="flex items-center gap-4">
+            {post.categories.map((item) => (
+              <p key={item.slug} className="text-sm md:text-md text-primary">
+                {item.name}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
     </Link>

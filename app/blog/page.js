@@ -72,13 +72,15 @@ export default async function page() {
                 <p className="text-sm md:text-md text-darkGray font-light">
                   {moment(item.node.createdAt).format("MMM DD, YYYY")}
                 </p>
-                {item.node.categories.map((item) => (
-                  <p
-                    key={item.slug}
-                    className="text-sm md:text-md text-primary">
-                    {item.name}
-                  </p>
-                ))}
+                <div className="flex items-center gap-4">
+                  {item.node.categories.map((item) => (
+                    <p
+                      key={item.slug}
+                      className="text-sm md:text-md text-primary uppercase">
+                      {item.name}
+                    </p>
+                  ))}
+                </div>
               </div>
             </div>
           </Link>
