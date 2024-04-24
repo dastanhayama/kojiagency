@@ -1,14 +1,16 @@
+"use client";
 import React from "react";
 import { RxArrowTopRight } from "react-icons/rx";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Links = [
-  { id: 1, title: "Home", titleLink: "/" },
-  { id: 2, title: "Work", titleLink: "/work" },
-  { id: 3, title: "About", titleLink: "/about" },
-  { id: 4, title: "Contact", titleLink: "/contact" },
-  { id: 5, title: "Blog", titleLink: "/blog" },
+  // { id: 1, title: "Home", titleLink: "/" },
+  { id: 2, title: "Work", titleLink: "work" },
+  { id: 3, title: "About", titleLink: "about" },
+  { id: 4, title: "Contact", titleLink: "contact" },
+  { id: 5, title: "Blog", titleLink: "blog" },
 ];
 
 const SocialLinks = [
@@ -19,6 +21,7 @@ const SocialLinks = [
 ];
 
 const Navigation = ({ toggleClass, setToggleClass }) => {
+  const pathname = usePathname();
   return (
     <motion.nav
       initial={{ opacity: 0 }}
@@ -38,22 +41,29 @@ const Navigation = ({ toggleClass, setToggleClass }) => {
           initial={{ opacity: 0, y: "20px" }}
           animate={{ opacity: 1, y: "0px" }}
           transition={{ duration: 0.2, ease: "easeOut", delay: 0.6 }}
-          className="bg-[#f3f5f9] basis-4/5 grid md:grid-cols-5 grid-cols-1 gap-0  mx-3 md:mx-[30px] border-[1px] border-darklightGray rounded-lg">
-          {Links.map((item) => (
-            <Link
-              key={item.id}
-              href={item.titleLink}
-              className="md:border-b-[0] border-b-[1px] md:border-r-[1px] border-darklightGray col-span-1 flex flex-col justify-end py-4 md:py-6 px-3 md:px-[20px] text-primary hover:bg-primary hover:text-[#f3f5f9] transition duration-400">
-              <li>
-                <div className="w-full flex justify-between items-center">
-                  <p className="text-md md:text-xl font-medium uppercase">
-                    {item.title}
-                  </p>
-                  <RxArrowTopRight size={20} className="font-primary" />
-                </div>
-              </li>
-            </Link>
-          ))}
+          className="bg-[#f3f5f9] basis-4/5 grid md:grid-cols-4 grid-cols-1 gap-0  mx-3 md:mx-[30px] border-[1px] border-darklightGray rounded-lg">
+          {Links.map((item) => {
+            const isActive = pathname.slice(1).startsWith(item.titleLink);
+            return (
+              <Link
+                key={item.id}
+                href={`/${item.titleLink}`}
+                className={
+                  isActive
+                    ? "md:border-b-[0] border-b-[1px] md:border-r-[1px] border-darklightGray col-span-1 flex flex-col justify-end py-4 md:py-6 px-3 md:px-[20px] bg-primary text-[#f3f5f9] "
+                    : "md:border-b-[0] border-b-[1px] md:border-r-[1px] border-darklightGray col-span-1 flex flex-col justify-end py-4 md:py-6 px-3 md:px-[20px] text-primary hover:bg-primary hover:text-[#f3f5f9] transition duration-400"
+                }>
+                <li>
+                  <div className="w-full flex justify-between items-center">
+                    <p className="text-md md:text-xl font-medium uppercase">
+                      {item.title}
+                    </p>
+                    <RxArrowTopRight size={20} className="font-primary" />
+                  </div>
+                </li>
+              </Link>
+            );
+          })}
         </motion.ul>
         {/* <div className=" basis-1/5 grid md:grid-cols-4 grid-cols-1 gap-0  mx-3 md:mx-[30px] border-[1px] border-darklightGray rounded-lg"> */}
         {/* <motion.div

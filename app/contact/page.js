@@ -12,6 +12,7 @@ export default function page() {
   });
   const [messages, setMessages] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
+  const [isLoading, setLoading] = useState(false);
   const { name, email, message, pages, service } = formData;
   const form = useRef();
   const handleChange = (evt) => {
@@ -23,6 +24,7 @@ export default function page() {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
+
     if (
       name.trim().length <= 0 ||
       email.trim().length <= 0 ||
@@ -32,6 +34,7 @@ export default function page() {
     ) {
       setMessages("All fields are required!");
     } else {
+      setLoading(true);
       emailjs
         .sendForm(
           "service_ga8ms7d",
@@ -43,6 +46,7 @@ export default function page() {
           (result) => {
             console.log(result.text);
             setSuccessMessage("Your message has been sent!");
+            setLoading(false);
             evt.target.reset();
             setFormData({
               ...formData,
@@ -56,6 +60,7 @@ export default function page() {
           (error) => {
             console.log(error.text);
             setMessages("Something went wrong. Please try again.");
+            setLoading(false);
           }
         );
     }
@@ -258,11 +263,47 @@ export default function page() {
             <p className="text-primary text-sm uppercase font-semibold">
               {successMessage}
             </p>
+          ) : isLoading ? (
+            <div className="px-8 py-2 bg-primary text-sm text-white font-base rounded-[100px] cursor-pointer w-full md:w-[100px] disabled:bg-darkGray flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-[20px] h-[20px]"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="xMidYMid"
+                width="200"
+                height="200"
+                style={{
+                  shapeRendering: "auto",
+                  display: "block",
+                  background: "rgba(255, 255, 255, 0)",
+                }}
+                xmlnsXlink="http://www.w3.org/1999/xlink">
+                <g>
+                  <circle
+                    cx="50"
+                    cy="50"
+                    fill="none"
+                    stroke="#f3f5f9"
+                    strokeWidth="10"
+                    r="35"
+                    strokeDasharray="164.93361431346415 56.97787143782138">
+                    <animateTransform
+                      attributeName="transform"
+                      type="rotate"
+                      repeatCount="indefinite"
+                      dur="1s"
+                      values="0 50 50;360 50 50"
+                      keyTimes="0;1"></animateTransform>
+                  </circle>
+                  <g></g>
+                </g>
+              </svg>
+            </div>
           ) : (
             <input
               type="submit"
               value="Send"
-              className="px-8 py-2 bg-primary text-sm text-white font-base rounded-[100px] cursor-pointer w-full md:w-auto disabled:bg-darkGray"
+              className="px-8 py-2 bg-primary text-sm text-white font-base rounded-[100px] cursor-pointer w-full md:w-[100px] disabled:bg-darkGray"
             />
           )}
 

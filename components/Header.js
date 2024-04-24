@@ -37,7 +37,10 @@ const Header = () => {
         animate={hidden ? "hidden" : "visible"}
         transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.6 }}
         className="fixed top-0 left-0 w-full h-[10vh] lg:h-[15vh] flex justify-between items-center px-6 md:px-[50px] bg-[#f3f5f9] z-[2]">
-        <Link href="/" className="flex items-center h-full">
+        <Link
+          href="/"
+          className="flex items-center h-full"
+          onClick={() => setToggleClass(false)}>
           <h2 className="text-xl md:text-4xl text-primary font-bold uppercase select-none tracking-[-0.07em] md:mr-[2px] mr-[1px] ">
             KOJI
           </h2>
