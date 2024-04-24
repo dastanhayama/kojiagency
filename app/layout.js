@@ -2,6 +2,7 @@ import "./globals.css";
 import { League_Spartan } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const league_spartan = League_Spartan({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={league_spartan.className}>
+        <SpeedInsights />
         <Header />
         {children}
         <Footer />

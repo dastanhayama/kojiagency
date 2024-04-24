@@ -26,18 +26,18 @@ export default function page() {
     if (
       name.trim().length <= 0 ||
       email.trim().length <= 0 ||
-      message.trim().length <= 0 ||
+      message.trim().length <= 0
       // pages.length <= 0 ||
-      service.length <= 0
+      // service.length <= 0
     ) {
       setMessages("All fields are required!");
     } else {
       emailjs
         .sendForm(
-          "service_vgp02da",
-          "template_bdqm6pi",
+          "service_ga8ms7d",
+          "template_4t59yc8",
           form.current,
-          "rFBtrjd6orZAbkLcj"
+          "ePpHov8hEyTcg4o79"
         )
         .then(
           (result) => {
@@ -50,7 +50,7 @@ export default function page() {
               email: "",
               message: "",
               // pages: "",
-              service: "",
+              // service: "",
             });
           },
           (error) => {
@@ -108,11 +108,11 @@ export default function page() {
           ref={form}
           onSubmit={handleSubmit}
           className="px-6 md:px-[50px] py-[50px] flex flex-col justify-start items-center md:items-start gap-8 w-full">
-          <div className="flex flex-col justify-start items-center md:items-start gap-4 w-full">
+          {/* <div className="flex flex-col justify-start items-center md:items-start gap-4 w-full">
             <p className="uppercase text-primary text-md text-center md:text-left">
               How can I help? <span className="text-red-400">*</span>
-            </p>
-            <div className="flex flex-col md:flex-row items-center gap-0 md:gap-2 w-full">
+            </p> */}
+          {/* <div className="flex flex-col md:flex-row items-center gap-0 md:gap-2 w-full">
               <input
                 type="radio"
                 id="SMM"
@@ -154,8 +154,8 @@ export default function page() {
                 className="text-sm text-primary font-light w-full md:w-auto flex justify-center items-center">
                 Paid Ads
               </label>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
           <div className="flex flex-col justify-start items-center md:items-start gap-4 w-full">
             <p className="uppercase text-primary text-md text-center md:text-left">
               Your details<span className="text-red-400">*</span>
